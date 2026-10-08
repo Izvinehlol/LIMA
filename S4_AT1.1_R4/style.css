@@ -1,0 +1,26 @@
+/* Estilo geral da página */
+body {
+    background-color: rgb(25, 0, 71);
+    color: rgb(244, 245, 197);
+}
+
+/* Centraliza o conteúdo do cabeçalho */
+header {
+    text-align: center;
+}
+
+/* Estilo dos textos de apresentação */
+p {
+    background-color: rgb(95, 70, 141);
+    max-width: 550px;
+}
+
+/* Estilo do rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
