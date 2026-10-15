@@ -24,3 +24,10 @@ footer {
     background-color: black;
     text-align: center;
 }
+
+/* Estilo do texto do rodapé */
+footer p {
+max-width: none;
+background-color: transparent;
+margin: 10px 0;
+}
