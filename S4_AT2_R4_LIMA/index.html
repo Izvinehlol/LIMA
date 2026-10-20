@@ -2,18 +2,22 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Configura a codificação para aceitar acentos -->
+    <!-- Define a codificação para aceitar acentos -->
     <meta charset="UTF-8">
 
     <!-- Adapta a página para celulares e tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Descrição da página para mecanismos de busca -->
-    <meta name="description"
-        content="PixelGear eSports Store: PCs gamers, periféricos e acessórios de alta performance.">
+    <!-- Descrição para mecanismos de busca -->
+    <meta name="description" content="PixelGear eSports Store: computadores gamers, periféricos e acessórios.">
 
     <!-- Título exibido na aba do navegador -->
     <title>PixelGear eSports Store</title>
+
+    <!-- Importa a fonte Roboto do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Conecta o arquivo CSS externo -->
     <link rel="stylesheet" href="style.css">
@@ -24,19 +28,21 @@
     <!-- Cabeçalho principal da loja -->
     <header>
         <h1>PixelGear eSports Store</h1>
-        <p>Seu setup gamer começa aqui!</p>
+        <p>Seu setup gamer começa aqui!<br>Performance, estilo e tecnologia.</p>
     </header>
 
-    <!-- Apresentação da loja -->
+    <!-- Conteúdo principal da página -->
     <main>
+
+        <!-- Apresentação da loja -->
         <section>
             <h2>Sobre a PixelGear eSports Store</h2>
 
             <p>
                 A PixelGear eSports Store é uma startup dedicada a fornecer
-                soluções completas para gamers, oferecendo montagem de PCs
-                de alta performance, periféricos de última geração e
-                acessórios especializados para eSports.
+                soluções completas para gamers, oferecendo computadores
+                de alta performance, periféricos e acessórios especializados
+                para a comunidade de eSports.
             </p>
         </section>
 
@@ -45,9 +51,9 @@
             <h2>Missão</h2>
 
             <p>
-                Fornecer equipamentos de alta qualidade para jogadores
-                de eSports, promovendo a excelência no desempenho
-                e a satisfação do cliente.
+                Fornecer equipamentos de alta qualidade para jogadores,
+                promovendo a excelência no desempenho e a satisfação
+                dos clientes.
             </p>
         </section>
 
@@ -57,8 +63,8 @@
 
             <p>
                 Tornar-se uma referência em produtos e serviços para
-                a comunidade de eSports, oferecendo inovação,
-                tecnologia e suporte especializado.
+                a comunidade gamer, oferecendo inovação, tecnologia
+                e suporte especializado.
             </p>
         </section>
 
@@ -67,14 +73,27 @@
             <h2>Valores</h2>
 
             <ul>
-                <li>Qualidade: produtos de alta performance.</li>
-                <li>Inovação: busca por novas tecnologias.</li>
-                <li>Transparência: honestidade com clientes e parceiros.</li>
-                <li>Paixão pelo eSports: dedicação à comunidade gamer.</li>
+                <li><strong>Qualidade:</strong> produtos de alta performance.</li>
+                <li><strong>Inovação:</strong> busca por novas tecnologias.</li>
+                <li><strong>Transparência:</strong> honestidade com os clientes.</li>
+                <li><strong>Paixão pelo eSports:</strong> dedicação à comunidade gamer.</li>
             </ul>
         </section>
 
         <hr>
+
+        <!-- Imagem demonstrativa de um PC Gamer -->
+        <section>
+            <h2>Conheça nosso PC Gamer</h2>
+
+            <img class="imagem-produto" src="https://cdn.awsli.com.br/2547/2547358/produto/312985304/pc-gamer-crystal-fury-amd-ryzen-7-8700f--nvme-512gb--mem-ria-16g-ddr5--placa-de-kh27b5xhth.jpg"
+                alt="Computador gamer com gabinete e componentes para jogos" width="600">
+
+            <p>
+                Um setup pensado para quem busca
+                <strong>desempenho, qualidade e estilo</strong>.
+            </p>
+        </section>
 
         <!-- Produto em destaque -->
         <article>
@@ -98,23 +117,83 @@
                 <li>Peso: 120 g</li>
             </ul>
 
-            <!-- Preços e promoção -->
+            <!-- Link de compra abaixo da ficha técnica -->
+            <p>
+                <a class="botao"
+                    href="https://web.whatsapp.com/"
+                    target="_blank" rel="noopener noreferrer">
+                    Comprar pelo WhatsApp
+                </a>
+            </p>
+
+            <!-- Preços e promoções -->
             <h3>Preços e Promoções</h3>
 
             <table>
-                <tr>
-                    <th>Produto</th>
-                    <th>Preço Normal</th>
-                    <th>Preço com Desconto</th>
-                </tr>
+                <caption>Comparação de preços do Mouse Gamer RGB</caption>
 
-                <tr>
-                    <td>Mouse Gamer RGB</td>
-                    <td>R$ 299,90</td>
-                    <td>R$ 249,90</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço Normal</th>
+                        <th scope="col">Preço com Desconto</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Mouse Gamer RGB</td>
+                        <td>R$ 299,90</td>
+                        <td>R$ 249,90</td>
+                    </tr>
+                </tbody>
             </table>
         </article>
+
+        <!-- Lista de periféricos -->
+        <section>
+            <h2>Periféricos para seu Setup</h2>
+
+            <p>Confira alguns acessórios para complementar seu computador:</p>
+
+            <ul>
+                <li>Teclado mecânico gamer</li>
+                <li>Mouse gamer RGB</li>
+                <li>Headset com microfone</li>
+                <li>Mousepad gamer</li>
+                <li>Monitor gamer</li>
+            </ul>
+        </section>
+
+        <!-- Sequência ordenada de montagem de um PC Gamer -->
+        <section>
+            <h2>Etapas de Montagem de um PC Gamer</h2>
+
+            <ol>
+                <li>Separar os componentes e as ferramentas necessárias.</li>
+                <li>Instalar o processador, a memória RAM e o armazenamento na placa-mãe.</li>
+                <li>Fixar a placa-mãe e a fonte de alimentação no gabinete.</li>
+                <li>Instalar a placa de vídeo e conectar os cabos necessários.</li>
+                <li>Conferir as conexões e testar o funcionamento do computador.</li>
+                <li>Instalar o sistema operacional e os drivers.</li>
+            </ol>
+        </section>
+
+        <!-- Área de suporte ao cliente -->
+        <section>
+            <h2>Precisa de Ajuda?</h2>
+
+            <p>
+                Entre em contato para tirar dúvidas sobre produtos,
+                montagem e acessórios.
+            </p>
+
+            <a class="botao" href="https://web.whatsapp.com/" target="_blank"
+                rel="noopener noreferrer">
+                Acessar Suporte
+            </a>
+        </section>
+
     </main>
 
     <!-- Rodapé da página -->

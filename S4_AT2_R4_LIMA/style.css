@@ -1,10 +1,8 @@
-/* Etapa 1 - Estilização da PixelGear eSports Store */
-
 /* Configura a aparência geral da página */
 body {
     background-color: #121214;
     color: #e1e1e6;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     line-height: 1.6;
 }
@@ -18,7 +16,9 @@ header {
 }
 
 /* Personaliza os títulos */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #563ce9;
 }
 
@@ -29,9 +29,61 @@ main {
     padding: 20px;
 }
 
-/* Espaçamento das seções */
-section, article {
+/* Define o espaçamento das seções e dos artigos */
+section,
+article {
     margin-bottom: 30px;
+}
+
+/* Estiliza o separador de conteúdo */
+hr {
+    border: 0;
+    border-top: 1px solid #563ce9;
+    margin: 30px 0;
+}
+
+/* Organiza as listas */
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Ajusta a imagem do PC Gamer */
+.imagem-produto {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid #563ce9;
+    border-radius: 10px;
+}
+
+/* Estiliza os botões de compra e suporte */
+.botao {
+    display: inline-block;
+    background-color: #563ce9;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+/* Altera a cor do botão ao passar o mouse */
+.botao:hover {
+    background-color: #725cf0;
+}
+
+/* Destaca os botões durante a navegação pelo teclado */
+.botao:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
 }
 
 /* Organiza a tabela de preços */
@@ -41,15 +93,24 @@ table {
     margin-top: 15px;
 }
 
-th, td {
+/* Formata o título da tabela */
+caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estiliza as células da tabela */
+th,
+td {
     border: 1px solid #563ce9;
     padding: 12px;
     text-align: center;
 }
 
+/* Personaliza os cabeçalhos da tabela */
 th {
     background-color: #202024;
-    color: #563ce9;
+    color: #a99bff;
 }
 
 /* Estiliza o rodapé */
@@ -58,9 +119,10 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 30px;
+    border-top: 2px solid #563ce9;
 }
 
-/* Ajustes para telas pequenas */
+/* Adapta a página para telas pequenas */
 @media (max-width: 600px) {
     main {
         padding: 15px;
@@ -69,5 +131,14 @@ footer {
     table {
         font-size: 12px;
     }
-}
 
+    th,
+    td {
+        padding: 8px 4px;
+    }
+
+    .botao {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
