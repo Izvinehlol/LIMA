@@ -1,0 +1,71 @@
+/* Configura a aparência geral da página */
+body {
+    background-color: #121214;
+    color: #e1e1e6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background-color: #202024;
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 3px solid #563ce9;
+}
+
+/* Personaliza os títulos */
+h1, h2, h3 {
+    color: #563ce9;
+}
+
+/* Organiza o conteúdo principal */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Espaçamento das seções */
+section, article {
+    margin-bottom: 30px;
+}
+
+/* Organiza a tabela de preços */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #563ce9;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #202024;
+    color: #563ce9;
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #202024;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+
