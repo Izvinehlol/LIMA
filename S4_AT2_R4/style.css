@@ -1,0 +1,142 @@
+
+/* Configurações gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+    color: #302833;
+    margin: 0;
+}
+
+
+/* Cabeçalho */
+header {
+    background-color: #302833;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #f49ab8;
+}
+
+
+/* Conteúdo principal */
+main {
+    width: 85%;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* Seções da página */
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 10px;
+}
+
+
+/* Títulos */
+h2 {
+    color: #df7598;
+}
+
+h3 {
+    color: #e98243;
+}
+
+
+/* Lista de definição */
+dl {
+    margin: 10px 0;
+}
+
+dt {
+    color: #e98243;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+dd {
+    margin: 0;
+    padding: 2px 0;
+    color: #555;
+}
+
+
+/* Tabelas */
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 15px;
+}
+
+/* Título das tabelas */
+caption {
+    padding: 10px;
+    font-weight: bold;
+    color: #302833;
+    text-align: left;
+}
+
+/* Células e cabeçalhos */
+.tabela th,
+.tabela td {
+    border: 1px solid #e8b7c8;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    height: 25px;
+}
+
+/* Cabeçalhos */
+.tabela th {
+    background-color: #f49ab8;
+    color: #302833;
+}
+
+/* Linhas alternadas para facilitar a leitura */
+.tabela tbody tr:nth-child(even) {
+    background-color: #fff5f8;
+}
+
+/* Rodapé das tabelas */
+.tabela tfoot td {
+    background-color: #f28a45;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Rodapé da página */
+footer {
+    background-color: #302833;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    .tabela {
+        font-size: 12px;
+    }
+
+    .tabela th,
+    .tabela td {
+        padding: 7px;
+    }
+}

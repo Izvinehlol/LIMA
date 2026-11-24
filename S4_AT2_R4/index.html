@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pódio Sports</title>
+
+    <!-- Conecta o arquivo CSS responsável pela aparência da página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho com o nome e a apresentação da loja -->
+    <header>
+        <h1>🏆 Pódio Sports</h1>
+        <p>Seu esporte, seu estilo!</p>
+    </header>
+
+    <main>
+
+        <!-- SEÇÃO 1: LISTAS DE CATEGORIAS -->
+
+        <section>
+
+            <h2>Categorias</h2>
+
+            <!--
+                Lista não numerada com a tag ul.
+                As listas internas organizam as subcategorias
+                de roupas, facilitando a identificação dos produtos.
+            -->
+            <ul>
+                <li>Roupas
+                    <ul>
+                        <li>Camisetas</li>
+                        <li>Shorts</li>
+                    </ul>
+                </li>
+
+                <li>Calçados</li>
+                <li>Acessórios</li>
+            </ul>
+
+
+            <!--
+                Lista numerada com a tag ol.
+                Apresenta os produtos mais vendidos
+                em uma sequência organizada.
+            -->
+            <h3>Mais vendidos</h3>
+
+            <ol>
+                <li>Tênis esportivo</li>
+                <li>Camiseta fitness</li>
+                <li>Mochila</li>
+            </ol>
+
+
+            <!--
+                Lista de definição utilizando dl, dt e dd.
+                A tag dt apresenta o nome do material,
+                enquanto dd apresenta sua descrição.
+            -->
+            <h3>Tipos de materiais</h3>
+
+            <dl>
+                <dt>Dry Fit</dt>
+                <dd>Tecido leve que facilita a transpiração.</dd>
+
+                <dt>Poliéster</dt>
+                <dd>Material resistente utilizado em roupas.</dd>
+            </dl>
+
+        </section>
+
+
+        <!-- SEÇÃO 2: CATÁLOGO DE PRODUTOS -->
+
+        <section>
+
+            <h2>Catálogo de produtos</h2>
+
+            <!--
+                Tabela principal com informações dos produtos.
+                caption fornece um título acessível para a tabela.
+                thead identifica os cabeçalhos, tbody contém os dados
+                e tfoot apresenta uma informação complementar.
+            -->
+
+            <table class="tabela">
+
+                <caption>Produtos disponíveis na loja</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Estoque</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!--
+                        colspan une as quatro colunas em uma única célula,
+                        identificando a categoria dos produtos.
+                    -->
+                    <tr>
+                        <th colspan="4" scope="colgroup">
+                            Roupas e acessórios
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td>Camiseta</td>
+                        <td>Dry Fit</td>
+                        <td>R$ 89,90</td>
+                        <td>Disponível</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mochila</td>
+                        <td>Esportiva</td>
+                        <td>R$ 149,90</td>
+                        <td>Disponível</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tênis</td>
+                        <td>Para corrida</td>
+                        <td>R$ 299,90</td>
+                        <td>Indisponível</td>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <!-- colspan também é utilizado no rodapé -->
+                        <td colspan="4">
+                            Confira nossos produtos!
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </section>
+
+
+        <!-- SEÇÃO 3: GUIA DE TAMANHOS -->
+
+        <section>
+
+            <h2>Guia de tamanhos</h2>
+
+            <!--
+                Segunda tabela com informações de tamanhos.
+                rowspan une duas linhas da primeira coluna,
+                evitando a repetição da categoria Adulto.
+            -->
+
+            <table class="tabela">
+
+                <caption>Tamanhos de camisetas</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Tamanho</th>
+                        <th scope="col">Medida</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th rowspan="2" scope="rowgroup">Adulto</th>
+                        <td>P</td>
+                        <td>90 cm</td>
+                    </tr>
+
+                    <tr>
+                        <td>M</td>
+                        <td>100 cm</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé com informações da loja -->
+    <footer>
+        <p>© 2026 Pódio Sports - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
